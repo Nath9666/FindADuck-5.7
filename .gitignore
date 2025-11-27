@@ -1,0 +1,151 @@
+# .gitignore pour projet Unreal Engine
+# Conserver les fichiers du projet (ex: .uproject, .uplugin, les .uasset/.umap)
+# Ignorer les fichiers et dossiers générés par la compilation, l'éditeur et l'OS
+
+# ===================================================================
+# Unreal Engine
+# ===================================================================
+# Binaries, Build, Intermediate, Derived data and saved runtime files
+/Binaries/
+/Build/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+
+# Crash reports and logs
+/Saved/Crashes/
+/Saved/Logs/
+/Saved/Dumps/
+/Saved/Backups/
+
+# Unreal user project settings
+*.uproject.user
+*.uplugin.user
+
+# UBT (Unreal Build Tool) and other generated files
+*.target
+*.patch
+*.gen.* 
+*.nativizedassets
+
+# Asset registry / other generated caches
+*.ucc
+*.uasset.meta
+*.umap.meta
+
+# ===================================================================
+# Visual Studio
+# ===================================================================
+.vs/
+*.sln
+*.suo
+*.user
+*.userosscache
+*.usertasks
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.sdf
+
+# Build outputs & pdbs
+*.obj
+*.pdb
+*.ipdb
+*.iobj
+*.idb
+
+# ===================================================================
+# Xcode / macOS
+# ===================================================================
+xcuserdata/
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcarchive/
+
+# Xcode build folders
+build/
+DerivedData/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbs & OS junk
+Thumbs.db
+ehthumbs.db
+
+# ===================================================================
+# IDEs / Editors
+# ===================================================================
+# VSCode
+.vscode/
+
+# JetBrains (Rider, CLion, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# ===================================================================
+# Packaging / distribution
+# ===================================================================
+# Ignore packaged builds and compressed artifacts
+*.zip
+*.7z
+*.tar
+*.gz
+*.pak
+*.pak.sig
+
+# Installer and deployment outputs
+Saved/StagedBuilds/
+Saved/Package/
+Saved/BuildData/
+
+# ===================================================================
+# Temporary files and logs
+# ===================================================================
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+~$*
+*.swp
+*.swo
+
+# ===================================================================
+# Other generated / platform specific
+# ===================================================================
+# Windows
+Thumbs.db
+desktop.ini
+
+# Android / Gradle
+*.gradle
+.gradle/
+local.properties
+
+# iOS
+*.mobileprovision
+*.entitlements
+
+# Node / npm (if used for tooling)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python caches (if any scripts)
+__pycache__/
+*.py[cod]
+
+# ===================================================================
+# Keep source files and assets tracked:
+# - *.uasset, *.umap, *.uproject, source code (*.cpp, *.h), config files (Config/)
+# ===================================================================
